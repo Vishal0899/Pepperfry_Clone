@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+    .nav_menu{
+        display: none;
+    }
+    .nav_container {
+        width: 94%;
+    }
+    .nh {
+        margin: 20px;
+        display: none;
+        opacity: 0;
+    }
+    .main_navigation_menu ul li a {
+        /* display: none; */
+        font-size: 0.8rem;
+    }
+    .main_navigation_menu ul{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .main_navigation_menu ul li{
+        /* flex-wrap: wrap;
+        gap: 10px; */
+        margin-right: 40px;
+        margin: auto;
+    }
+
+    /* --------------------------------------------- */
+    .add-on1{
+        top: 60px;
+    }
+    .inside-menu-brands p{
+        font-weight: 600;
+        margin-left: 30px;
+        font-size: 14px;
+    }
+    .brand-col a{
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    /* ---------------------------------------------- */
+    .container1 {
+        margin:0 45px;
+    }
+    .pf-col-col-8-xs-8{
+        margin-left: 15px;
+        font-size: 12px;
+    }
+}
