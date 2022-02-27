@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    /* font-family: 'Playfair Display', serif; */
+    background-color: #fff;
+    /* border: 2px solid red; */
+    box-sizing: content-box;
+    width: 100%;
+}
+.wrapper1{
+    /* width: 100%; */
+    margin: 10px 6%;
+    /* border: 1px solid red; */
+}
+/* ----------OFFER BAR------------- */
+
+.offer_bar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+    position: sticky;
+    /* color: white; */
+  }
+  .ob_right{
+    margin-right: 20px;
+  }
+  .ob_right p{
+    color: white;
+    margin: 0;
+  }
+  .ob_right span{
+    color: orangered;
+  }
+  .ob_left p{
+    margin: 0;
+    margin-left: 15px;
+    color: white;
+    font-weight: 500;
+  }
+  .ob_left span{
+    font-weight: 100;
+  }
+  .ob_right input{
+    position: relative;
+    margin-left: 4px;
+    width: 15px;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .ob_right input[type="checkbox"]:checked ~ .chek{
+    display: block;
+  }
+  .hideOb{
+    display: none;
+  }
+  .ob_right img{
+    position:absolute;
+    right: 6.5%;
+    top: 13.3px;
+    cursor: pointer;
+  }
+
+/* ---------SECTION 1---------- */
+.sec1{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+
+}
+.carousel-inner{
+    width: 888px;
+}
+.carousel-item{
+    width: 888px;
+}
+.carousel_div img{
+    width: 888px;
+}
+.carousel-indicators button{
+    min-height: 1rem;
+    max-width: 1rem;
+    border-radius: 50%;  
+}
+.gif_div img{
+    width: 287.77px;
+    height: 100%;
+}
+
+/* -------------SECTION 2-----SHOP BY ROOM------------ */
+
+.sec2{
+    padding-top: 2rem;
+}
+.sbr-title h2{
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-family: 'Playfair Display', serif;
+}
+.sbr-bottom{
+    padding-top: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+.sbr-card img{
+    width: 288px;
+}
+.sbr-card p{
+    font-family: 'Manrope',sans-serif;
+    display: inline-block;
+    font-size: 20px;
+    color: #121212;
+    margin-top: 8px;
+    
+}
+
+/* <!-- -----------------SECTION 3---WHAT'S EVERYONE EYEING---------- --> */
+
+.sec3{
+    padding-top: 2rem;
+}
+.wee-title h2{
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-family: 'Playfair Display', serif;
+}
+.wee-bottom{
+    padding-top: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+.wee-left-card img{
+    width: 387.7px;
+    height: 417.67px;
+    padding: 0px 6px;
+}
+.wee-right-card img{
+    width: 100%;
+    height: 202.94px;
+}
+.wee-right-card{
+    width: 199.84px;
+    height: 417.67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 6px;
+}
+
+/* -----------SECTION 4-----YOUR POCKET FRIENDLY SHOPPE----------- */
+.sec4{
+    padding-top: 2rem;
+}
+.ypfs-title h2{
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-family: 'Playfair Display', serif;
+}
+.ypfs-bottom{
+    padding-top: 6px;
+    display: flex;
+    overflow:hidden;
+}
+.ypfs-card{
+    padding: 0 6px;
+}
+.ypfs-card img{
+    width: 288px;
+}
+.ypfs-card p:nth-child(1){
+    font-family: 'Manrope',sans-serif;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #000;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+.ypfs-card p:nth-child(2){
+    font-family: 'Manrope',sans-serif;
+    /* display: inline-block; */
+    font-size: 16px;
+    /* font-weight: bolder; */
+    color: #848484;
+}
+
+/* <!-- -----------SECTION 5-----WE HAVE GOT YOUR STYLES----------- --> */
+.sec5{
+    margin: 21px 0;
+}
+.wgys{
+    background-color: #e9f1f5;
+    display: flex;
+    padding: 40px 0 21px 0;
+    justify-content: center;
+}
+.wgys-left{
+    width: 300px;
+    padding: 0 6px;
+}
+.wgys-left h2{
+    font-family: 'Playfair Display',serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.wgys-left p:nth-child(2){
+    font-size: 20px;
+    font-family: 'Manrope',sans-serif;
+    margin-bottom: 16px;
+}
+.wgys-left p:nth-child(3){
+    font-family: 'Manrope',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff7035;
+    cursor: pointer;
+}
+
+.wgys-right{
+    width: 900px;
+    display: flex;
+    padding: 0 6px;
+    /* justify-content: space-between; */
+}
+.wgys-cards{
+    margin: 0px 6px;
+}
+.wgys-cards img{
+    width: 284px;
+}
+.wgys-cards p:nth-child(1){
+    font-family: 'Manrope',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #121212;
+    margin: 0;
+}
+.wgys-cards p:nth-child(2){
+    font-family: 'Manrope',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #848484;
+    display: -webkit-box;
+}
+
+/* <!-- -----------WRAPPER 2----------- --> */
+.wrapper2{
+    margin: 10px 6%;
+}
+
+/* --------------SECTION 6----READY FOR THE NEW------------ */
+.sec6{
+    padding: 1rem 0;
+}
+.rftn-title h2{
+    font-family: "Playfair Display",serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #121212;
+}
+.rftn-bottom{
+    display: flex;
+    overflow: hidden;
+    padding-top: 6px;
+
+}
+.rftn-cards{
+    padding: 0 6px;
+}
+.rftn-cards img{
+    width: 388px;
+    /* height: 397.86px; */
+}
+.rftn-cards p:nth-child(1){
+    font-family: 'Manrope',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #121212;
+    margin: 4px 0px;
+}
+.rftn-cards p:nth-child(2){
+    font-family: 'Manrope',sans-serif;
+    font-size: 16px;
+    color: #848484;
+    margin: 0;
+}
+
+/* <!-- --------------SECTION 7--------HOME DECOR YOU CAN'T IGNORE-------------- --> */
+
+.sec7{
+    padding: 1rem 0;
+}
+.hdyci-title h2{
+    font-family: "Playfair Display",serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #121212;
+}
+.hdyci-bottom{
+    display: flex;
+    overflow: hidden;
+    padding-top: 6px;
+
+}
+.hdyci-cards{
+    padding: 0 6px;
+}
+.hdyci-cards img{
+    width: 288px;
+    /* height: 397.86px; */
+}
+.hdyci-cards p:nth-child(1){
+    font-family: 'Manrope',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #121212;
+    margin: 4px 0px 0 0;
+}
+.hdyci-cards p:nth-child(2){
+    font-family: 'Manrope',sans-serif;
+    font-size: 16px;
+    color: #848484;
+}
+
+/* <!-- ----------------SECTION 8--------TOP BRANDS TO CHOOSE FROM------------ --> */
+
+.sec8{
+    padding: 1rem 0;
+}
+.tbtcf-title h2{
+    font-family: "Playfair Display",serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #121212;
+}
+.tbtcf-bottom{
+    display: flex;
+    padding-top: 6px;
+
+}
+.tbtcf-cards{
+    padding: 0 6px;
+}
+.tbtcf-cards img{
+    width: 187.844px;
+}
+.tbtcf-bottom2{
+    display: flex;
+    padding-top: 2.5rem;
+}
+.tbtcf-cards2{
+    padding: 0 6px;
+}
+.tbtcf-cards2 img{
+    width: 587.55px;
+}
+
+/* <!-- -----------------SECTION 9-----MORE FROM THE STORE----------------- --> */
+.sec9{
+    margin: 21px 0;
+    /* border: 2px solid red; */
+    background: #f6f6f4 url(https://ii1.pepperfry.com/images/hp_more_from_store_bg.jpg) no-repeat right bottom;
+    background-size: contain;
+    width: 100%;
+    padding: 20px 0 21px 0;
+}
+.mfts-title{
+    margin: 0 6%;
+}
+.mfts-title h2{
+    font-family: "Playfair Display",serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #121212;
+}
+.mfts-bottom{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 6%;
+    text-align: left;
+}
+.mfts-row{
+    padding: 10px 0 0 0;
+    margin-right: 4rem;
+}
+.mfts-row-title{
+    font-family: 'Manropes', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #323232;
+    margin: 6px 0;
+}
+.mfts-row-items{
+    font-family: 'Manropes', sans-serif;
+    font-size: 12px;
+    color: #374c4c;
+    margin: 0;
+    line-height: 18px;
+}
+.mfts-row-items:hover{
+    color: #ff7035;
+    cursor: pointer;
+}
+
+/* <!-- -----------WRAPPER 3----------- --> */
+.wrapper3{
+    margin: 10px 6%;
+}
+/* <!-- ------------SECTION 10----HAPPY CUSTOMER HAPPY US-------------- --> */
+
+.sec10{
+    padding: 1rem 0;
+}
+.hchu-title h2{
+    font-family: "Playfair Display",serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #121212;
+}
+.hchu-bottom{
+    display: flex;
+    padding-top: 6px;
+
+}
+.hchu-cards{
+    padding: 0 6px;
+}
+.hchu-cards img{
+    width: 387.7px;
+}
+.cu-cmnt p{
+    font-family: 'Manrope',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #121212;
+}
+.cu-info p:nth-child(1){
+    font-family: 'Manrope',sans-serif;
+    font-size: 14px;
+    margin: 0;
+    color: #121212;
+}
+.cu-info p:nth-child(2){
+    font-family: 'Manrope',sans-serif;
+    font-size: 14px;
+    margin: 0;
+    color: #848484;
+}
+
+/* <!-- ------------SECTION 11----NEED HELP BUYING-------------- --> */
+
+.sec11{
+    padding: 1.5rem 0;
+}
+.nhb-title h2{
+    font-family: "Playfair Display",serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #121212;
+}
+.nhb-bottom{
+    display: flex;
+    padding-top: 6px;
+
+}
+.nhb-cards{
+    padding: 0 6px;
+}
+.nhb-cards img{
+    width: 187.844px;
+}
+.nhb-cards p{
+    color: #121212;
+    font-size: 16px;
+    font-family: 'Manrope',sans-serif;
+    margin-top: 1rem;
+}
