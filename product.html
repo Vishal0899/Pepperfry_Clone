@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="icon" href="./pf_icon_small.jpg" type="image/icon type">
+    <!-- ---------BOOTSTRAP CSS--------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+    <!-- ----------------NavBar Section------------------ -->
+    <!-- Movable Button -->
+  <a onclick="topFunction()" id="top_btn"></a>
+
+
+    <div>
+        <div class="nav_container">
+          <!-- Navbar Top Part -->
+          <div class="nav_content_wrap">
+            <div class="nav_logo">
+              <a href="index.html" id="nav_logo_link"></a>
+            </div>
+            <div class="nav_menu">
+              <div><a href="#" class="nav_menu_link">Shop</a></div>
+              <div><a href="#" class="nav_menu_link">Get Inspired</a></div>
+              <div><a href="#" class="nav_menu_link">Partner</a></div>
+            </div>
+            <div class="nav_search">
+              <div class="search_wrap">
+                <input type="text" placeholder="Door to happiness begins with a Search" maxlength="200" id="search"
+                  class="search_input" />
+                <input type="button" id="search_btn" class="search_button" />
+              </div>
+            </div>
+            <div class="nav_pincode">
+              <div class="pincode_input">
+                <span class="pincode_input_text">Enter Pincode</span>
+              </div>
+              <div class="pincode_result">Find Pepperfry studio</div>
+            </div>
+            <div class="nav_wish_cart">
+              <a href="wishlist.html" class="nav_wish_link wishcart_link"></a>
+              <a href="checkout.html" class="nav_cart_link wishcart_link"></a>
+            </div>
+            <div class="nav_profile">
+              <a href="#" class="profile_link" id="loginopen"></a>
+            </div>
+          </div>
+          <!-- Navbar Lower Part -->
+          <div class="pf-col xs-12 nav_filter_content_wrap">
+            <div class="main_navigation_menu">
+              <ul onmousemove="move()">
+                <li class="main_menu_item" onmouseover="show1()" onmouseout="hide()">
+                  <a href="#"> Furniture </a>
+                </li>
+    
+                <li class="main_menu_item" onmouseover="show2()" onmouseout="hide()">
+                  <a href="#"> Sofas & Recliners </a>
+                </li>
+                <li class="main_menu_item" onmouseover="show3()" onmouseout="hide()">
+                  <a href="#"> Cabinetry </a>
+                </li>
+                <li class="main_menu_item" onmouseover="show4()" onmouseout="hide()">
+                  <a href="#"> Beds </a>
+                </li>
+                <li class="main_menu_item" onmouseover="show5()" onmouseout="hide()">
+                  <a href="#"> Mattresses </a>
+                </li>
+                <li class="main_menu_item" onmouseover="show6()" onmouseout="hide()">
+                  <a href="#"> Furnishings </a>
+                </li>
+                <li class="main_menu_item" onmouseover="show7()" onmouseout="hide()">
+                  <a href="#"> Decor </a>
+                </li>
+                <li class="main_menu_item" onmouseover="show8()" onmouseout="hide()">
+                  <a href="#"> Lighting </a>
+                </li>
+                <li class="main_menu_item" onmouseover="show9()" onmouseout="hide()">
+                  <a href="#"> Appliances </a>
+                </li>
+                <li class="main_menu_item" onmousemove="show10()"  onmouseout="hide()">
+                  <a href="#"> Modular </a>
+                </li>
+              </ul>
+              <div class="inside_menu" style="display: none;" id="inside_menu" onmouseover="show()" onmouseout="hide()">
+                <ul>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Sofas & Recliners
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Seating
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Chairs
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Bed
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Cabinetry
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Tables
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Dining
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Kids & Teens
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Home Office
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Sofa Chair
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Entertainment Unit
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Outdoor
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Bar Funiture
+                    </a>
+                  </li>
+                  <li class="add_on_list">
+                    <a href="#">
+                      Funiture & Home Services</li>
+                  </a>
+                </ul>
+                <div class="inside-menu-brands">
+                  <p>Popular Brands</p>
+                  <div class="inside-menu-brand-col">
+                    <div class="brand-col">
+                      <a href="">@home</a>
+                      <a href="">ARRA</a>
+                      <a href="">Bohemiana</a>
+                      <a href="">Chumbak</a>
+                      <a href="">Durian</a>
+                      <a href="">Evok</a>
+                      <a href="">Furnitech</a>
+                      <a href="">Home Center</a>
+                      <a href="">Mntwud</a>
+                      <a href="">Muebles Casa</a>
+                      <a href="">Orange Tree</a>
+                      <a href="">Trevi Furniture</a>
+                      <a href="">Vittoria</a>
+                      <a href="">View All Brands</a>
+                    </div>
+                    <div class="brand-col">
+                      <a href="">Amberville</a>
+                      <a href="">Bantia Furniture</a>
+                      <a href="">CasaCraft</a>
+                      <a href="">Dreamzz Furniture</a>
+                      <a href="">Duroflex</a>
+                      <a href="">Febonic</a>
+                      <a href="">Furny</a>
+                      <a href="">Home Town</a>
+                      <a href="">Mudra Mark</a>
+                      <a href="">Off the Shelf</a>
+                      <a href="">Recliners India</a>
+                      <a href="">Urban Living</a>
+                      <a href="">Woods Worth</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="inside-menu-img">
+                  <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/2021_hover_Sofa_Recliners.png" alt="">
+                </div>
+              </div>
+              <a  class="nh" href="#">Need Help?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- product -->
+    
+      <div id="maincontainer">
+        <h2>3 Seater Sofas</h2>
+        <div id="CatSofa">
+            
+        </div>
+        <div id="container">
+            <div id="A">
+                <div id="S">
+                    <h4>Sort by</h4>
+                    <span class="items">
+                        <button class="Sbullet" id="1" onclick="Sfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>Relevance</p>
+                    </span>
+                    <span class="items">
+                        <button  class="Sbullet" id="2" onclick="Sfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>Highest Priced First</p>
+                    </span>
+                    <span class="items">
+                        <button  class="Sbullet" id="3" onclick="Sfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>Lowest Priced First</p>
+                    </span>
+                    <span class="items">
+                        <button  class="Sbullet" id="4" onclick="Sfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>Fastest Shipping</p>
+                    </span>
+                    <span class="items">
+                        <button  class="Sbullet" id="5" onclick="Sfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>Newest</p>
+                    </span>
+                </div>
+                <div id="B">
+                    <div id="BA">
+                        <h4>Brand</h4>
+                    </div>
+                    <div id="Brands">
+                        <h6>TOP BRANDS</h6>
+                        <div>
+                            <span class="items">
+                                <button  class="Bbullet" id="CasaCraft" onclick="Bfunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>CasaCraft</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Bbullet" id="Woodsworth" onclick="Bfunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Woodsworth</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Bbullet" id="Mintwud" onclick="Bfunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Mintwud</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Bbullet" id="Wakefit" onclick="Bfunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Wakefit</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Bbullet" id="Mudramark" onclick="Bfunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Mudramark</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Bbullet" id="Duroflex" onclick="Bfunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Duroflex</p>
+                            </span>
+                        </div>
+                        <h6>OTHER</h6>
+                        <div>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Febonic</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Solace Craft</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Home Centre</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Adorn Homez</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Furny</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Lezino</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Furnitech</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>@home</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>ARRA</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Bantia Furniture</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Crystal Furnitech</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Durian</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Evok</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Fine Group</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>HomeTown</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Muebles Casa</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Parin</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>VOF</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Casastyle </p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Furnish your dream</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Lofty Dreams</p>
+                            </span>
+                            <span class="items">
+                                <button  class="Obullet" id="" onclick="Ofunc(this.id)">
+                                    <div></div>
+                                </button>
+                                <p>Trevi Furniture</p>
+                            </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="price">
+                    <div>
+                        <h4>Price</h4>
+                    </div>
+                    <span class="items">
+                        <button  class="Pbullet" id="" onclick="Pfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>Under ₹ 20,000</p>
+                    </span>
+                    <span class="items">
+                        <button  class="Pbullet" id="" onclick="Pfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>₹ 20,000 to ₹ 40,000</p>
+                    </span>
+                    <span class="items">
+                        <button  class="Pbullet" id="" onclick="Pfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>Over ₹ 40,000 </p>
+                    </span>
+                </div>
+                <div id="PM">
+                    <div>
+                        <h4>Primary Material</h4>
+                    </div>
+                    <div id="Pmaterial">
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>Fabric</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Velvet Fabric</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Leatherette</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Sheesham Wood</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Pine Wood</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Rubber Wood</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Leather</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Polyester</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Half Leather</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Teak Wood</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Polyvinyl Chloride (PVC)</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Beech Wood</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Leatherite</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>MDF</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Mango Wood</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Polyurethane (PUR and PU)</p>
+                        </span>
+                        <span class="items">
+                            <button  class="PMbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Suede</p>
+                        </span>
+                    </div>
+                </div>
+                <div id="CS">
+                    <div>
+                        <h4>Clearance Sale</h4>
+                    </div>
+                    <span class="items">
+                        <button  class="CSbullet" id="" onclick="Pfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>No</p>
+                    </span>
+                    <span class="items">
+                        <button  class="CSbullet" id="" onclick="Pfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>Yes</p>
+                    </span>
+                </div>
+                <div id="Style">
+                    <div>
+                        <h4>Style</h4>
+                    </div>
+                    <div id="style">
+                        <span class="items">
+                            <button  class="Stylebullet" id="" onclick="Pfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>Contemporary</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Stylebullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Modern</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Stylebullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Mid Century</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Stylebullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Lawson</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Stylebullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Rolled Arms</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Stylebullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Bucket</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Stylebullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Chesterfield</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Stylebullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Traditional</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Stylebullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Mid-Century Modern</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Stylebullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Camelback</p>
+                        </span>
+                    </div>
+                </div>
+                <div id="Colour">
+                    <div>
+                        <h4>Colour</h4>
+                    </div>
+                    <div id="color">
+                        <span class="items">
+                        <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>Grey</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Brown</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Blue</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Beige</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Green</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Red</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Black</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Pick</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Dual</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Orange</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Yellow</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>White</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Purple</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Printed</p>
+                        </span>
+                        <span class="items">
+                            <button  class="Colourbullet" id="" onclick="Pfunc(this.id)">
+                                <div></div>
+                            </button>
+                            <p>Multicolour</p>
+                        </span>
+                    </div>
+                </div>
+                <div id="CSwatch">
+                    <div>
+                        <h4>Colour Swatch</h4>
+                    </div>
+                    <div id="CSW">
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>
+                                    <p>grey</p>    
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: grey;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>
+                                    <p>brown</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: brown;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>blue</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: blue;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>beige</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: beige;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>green</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: green;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>black</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: black;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>red</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: red;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>pink</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: pink;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>yellow</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: yellow;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>maroon</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: maroon;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>orange</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: orange;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>purple</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: purple;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>white</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: white;" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>cream</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: rgb(246,239,223);" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>wine</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: rgb(123,41,53);" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>burgundy</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: rgb(140,0,29);" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                            <span class="items">
+                                <div class="CSwatch1div">
+                                    <button  class="CSwatchbullet" id="" onclick="Pfunc(this.id)">
+                                        <div></div>
+                                    </button>   
+                                    <p>mustard</p>
+                                </div>
+                                <div class="CSwatch2div">
+                                    <button  class="CSWatchbullet" id="" style="background-color: rgb(255,218,49);" onclick="Pfunc(this.id)"></button>
+                                </div>
+                            </span>
+                        </div>
+                </div>
+                <div id="Discount">
+                    <div>
+                        <h4>Discount</h4>
+                    </div>
+                    <span class="items">
+                        <button  class="Discountbullet" id="" onclick="Dfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>10% and Above</p>
+                    </span>
+                    <span class="items">
+                        <button  class="Discountbullet" id="" onclick="Dfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>20% and Above</p>
+                    </span>
+                    <span class="items">
+                        <button  class="Discountbullet" id="" onclick="Dfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>30% and Above</p>
+                    </span>
+                    <span class="items">
+                        <button  class="Discountbullet" id="" onclick="Dfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>40% and Above</p>
+                    </span>
+                    <span class="items">
+                        <button  class="Discountbullet" id="" onclick="Dfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>50% and Above</p>
+                    </span>
+                    <span class="items">
+                        <button  class="Discountbullet" id="" onclick="Dfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>60% and Above</p>
+                    </span>
+                    <span class="items">
+                        <button  class="Discountbullet" id="" onclick="Dfunc(this.id)">
+                            <div></div>
+                        </button>
+                        <p>70% and Above</p>
+                    </span>
+                </div>
+        </div>
+        <div id="Product"></div>
+        </div>
+    </div>
+    
+      <!-- footer********************* -->
+    
+    
+      <footer>
+        <div class="footer_container">
+          <div class="container1">
+            <div class="row footer_row1">
+              <div class="pf-col col-3 xs-3">
+                <div class="footer_col">
+                  <h6 class="footer_col_title">Useful Links</h6>
+                </div>
+                <div class="footer_col_list">
+                  <div class="footer_col_list_item">
+                    <a href="#"> About Us </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Our Blog </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Carrers </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Corporate Governance </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Pepperfry In the news </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Find A Studio </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Gift Cards </a>
+                  </div>
+                  <div class="footer_col_list_item"><a href="#"> Brands </a></div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Customer reviews </a>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-col col-3 xs-3">
+                <div class="footer_col">
+                  <h6 class="footer_col_title">Partners</h6>
+                </div>
+                <div class="footer_col_list">
+                  <div class="footer_col_list_item">
+                    <a href="#"> Sell With Us </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Become a Franchisee </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Design For Us </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Pepperfry Marketplace Policies </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Important : GST and You </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Corporate Enquiries </a>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-col col-3 xs-3">
+                <div class="footer_col">
+                  <h6 class="footer_col_title">Need Help?</h6>
+                </div>
+                <div class="footer_col_list">
+                  <div class="footer_col_list_item">
+                    <a href="#"> Contact Us </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Returns & Refund </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Track Your Order </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> FAQs </a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#"> Buy on Phone </a>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-col col-3 xs-3">
+                <div class="footer_col">
+                  <h6 class="footer_col_title col_title_download">
+                    Download App
+                  </h6>
+                </div>
+                <div class="footer_col_list">
+                  <div class="footer_col_list_item">
+                    <a href="#" class="footer_appstore_link"></a>
+                  </div>
+                  <div class="footer_col_list_item">
+                    <a href="#" class="footer_playstore_link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row footer_row2">
+              <div class="pf-col col-4 xs-4">
+                <div class="footer_col">
+                  <h6 class="footer_col_title">Popular Categories</h6>
+                </div>
+                <div class="footer_col_list_item">
+                  <a href="#">Queen Size Beds,</a>
+                  <a href="#">King Size Beds,</a>
+                  <a href="#">Coffee Tables,</a>
+                  <a href="#">Dining Sets,</a>
+                  <a href="#">Recliners,</a>
+                  <a href="#">Sofa cum Beds,</a>
+                  <a href="#">Rocking Chairs,</a>
+                  <a href="#">Cabinets,</a>
+                  <a href="#">Book Shelves,</a>
+                  <a href="#">TV Unit,</a>
+                  <a href="#">Wardrobes,</a>
+                  <a href="#">Outdoor Furniture,</a>
+                  <a href="#">Bar Cabinets,</a>
+                  <a href="#">Wall Shelves,</a>
+                  <a href="#">Photo Frames,</a>
+                  <a href="#">Bed Sheets,</a>
+                  <a href="#">Mattresses,</a>
+                  <a href="#">Table Cloth,</a>
+                  <a href="#">Living Room Furniture,</a>
+                  <a href="#">Study Tables,</a>
+                  <a href="#">Dining Room Furniture,</a>
+                  <a href="#">Office Furniture,</a>
+                  <a href="#">Bed Room Furniture,</a>
+                  <a href="#">Dining Table,</a>
+                  <a href="#">Beds,</a>
+                  <a href="#">Sofas,</a>
+                  <a href="#">Sofa Set,</a>
+                  <a href="#">Trundle Bed</a>
+                </div>
+              </div>
+              <div class="pf-col col-4 xs-4">
+                <div class="footer_col">
+                  <h6 class="footer_col_title">Popular Brands</h6>
+                </div>
+                <div class="footer_col_list_item">
+                  <a href="#">Mintwud, </a>
+                  <a href="#">Woodsworth, </a>
+                  <a href="#">CasaCraft, </a>
+                  <a href="#">Amberville, </a>
+                  <a href="#">Mudramark, </a>
+                  <a href="#">Bohemiana, </a>
+                  <a href="#">Mollycoddle, </a>
+                  <a href="#">Mangiamo, </a>
+                  <a href="#">Clouddio, </a>
+                  <a href="#">Spacewood, </a>
+                  <a href="#">Durian, </a>
+                  <a href="#">Star India, </a>
+                  <a href="#">Adiko Systems, </a>
+                  <a href="#">Crystal Furnitech, </a>
+                  <a href="#">Springtek, </a>
+                  <a href="#">Story@Home, </a>
+                  <a href="#">Parin, </a>
+                  <a href="#">Furnitech, </a>
+                  <a href="#">Trevi Furniture, </a>
+                  <a href="#">Peachtree, </a>
+                  <a href="#">Durfi, </a>
+                  <a href="#">Muebles Casa, </a>
+                  <a href="#">Duroflex</a>
+                </div>
+              </div>
+              <div class="pf-col col-4 xs-4">
+                <div class="footer_col">
+                  <h6 class="footer_col_title">Cities we deliver to</h6>
+                </div>
+                <div class="footer_col_list_item">
+                  <a href="#">Bengaluru, </a>
+                  <a href="#">Mumbai, </a>
+                  <a href="#">Navi Mumbai, </a>
+                  <a href="#">Delhi, </a>
+                  <a href="#">Hyderabad, </a>
+                  <a href="#">Pune, </a>
+                  <a href="#">Chennai, </a>
+                  <a href="#">Gurgaon, </a>
+                  <a href="#">Kolkata, </a>
+                  <a href="#">Noida, </a>
+                  <a href="#">Goa, </a>
+                  <a href="#">Ghaziabad, </a>
+                  <a href="#">Ahmedabad, </a>
+                  <a href="#">Coimbatore, </a>
+                  <a href="#">Faridabad, </a>
+                  <a href="#">Jaipur, </a>
+                  <a href="#">Lucknow, </a>
+                  <a href="#">Kochi, </a>
+                  <a href="#">Visakhapatnam, </a>
+                  <a href="#">Chandigarh, </a>
+                  <a href="#">Vadodara, </a>
+                  <a href="#">Nagpur, </a>
+                  <a href="#">Thiruvananthapuram, </a>
+                  <a href="#">Indore, </a>
+                  <a href="#">Mysore, </a>
+                  <a href="#">Bhopal, </a>
+                  <a href="#">Surat, </a>
+                  <a href="#">Jalandhar, </a>
+                  <a href="#">Patna, </a>
+                  <a href="#">Ludhiana, </a>
+                  <a href="#">Nashik, </a>
+                  <a href="#">Madurai, </a>
+                  <a href="#">Kanpur, </a>
+                  <a href="#">Aurangabad </a>
+                  <a href="#">and many more</a>
+                </div>
+              </div>
+            </div>
+            <div class="row footer_row3">
+              <div class="pf-col col-7 xs-7">
+                <!-- <div class="footer_col"> -->
+                <h6 class="footer_pay_title">We Accept</h6>
+                <!-- </div> -->
+                <div class="footer_pay_list">
+                  <a href="#" class="footer_pay_link visa_pay">&nbsp;</a>
+                  <a href="#" class="footer_pay_link master_pay">&nbsp;</a>
+                  <a href="#" class="footer_pay_link mestro_pay">&nbsp;</a>
+                  <a href="#" class="footer_pay_link amex_pay">&nbsp;</a>
+                  <a href="#" class="footer_pay_link rupay_pay">&nbsp;</a>
+                  <a href="#" class="footer_pay_link dinner_pay">&nbsp;</a>
+                  <a href="#" class="footer_pay_link wallet_pay">&nbsp;</a>
+                  <a href="#" class="footer_pay_link internet_bank_pay">&nbsp;</a>
+                </div>
+              </div>
+              <div class="pf-col col-5 xs-5">
+                <!-- <div class="footer_col"> -->
+                <h6 class="footer_social_title">Like what you see? You'll like us even more here</h6>
+                <!-- </div> -->
+                <div class="footer_social_list">
+                  <a href="#" class="footer_social_link facebook_link">&nbsp;</a>
+                  <a href="#" class="footer_social_link twitter_link">&nbsp;</a>
+                  <a href="#" class="footer_social_link youtube_link">&nbsp;</a>
+                  <a href="#" class="footer_social_link instagram_link">&nbsp;</a>
+                  <a href="#" class="footer_social_link linkedin_link">&nbsp;</a>
+                  <a href="#" class="footer_social_link pinterest_link">&nbsp;</a>
+                </div>
+              </div>
+            </div>
+            <div class="row footer_row4">
+              <div class="pf-col col-4 xs-4">
+                <div class="footer_col_list">
+    
+                  <a href="#" class="footer_col_link">Buy In Bulk</a>
+                  <a href="#" class="footer_col_link">Write A Testimonial</a>
+                </div>
+    
+              </div>
+              <div class="pf-col-col-8-xs-8">
+                <div class="footer_col_list">
+    
+                  <a href="#" class="footer_col_link">Whitehat</a>
+                  <a href="#" class="footer_col_link">Site Map</a>
+                  <a href="#" class="footer_col_link">Terms Of Use</a>
+                  <a href="#" class="footer_col_link">Privacy Policy</a>
+                  <a href="#" class="footer_col_link">Your Data & Security</a>
+                  <a href="#" class="footer_col_link">Grievance Redressal</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+<script src="header.js"></script>
+<script src="product.js"></script>
