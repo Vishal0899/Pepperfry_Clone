@@ -6,30 +6,68 @@ document.querySelector(".popup .close-btn").addEventListener("click", function (
     document.querySelector(".popup").classList.remove("active");
 });
 
+const form = document.getElementById("reg-form");
+form.addEventListener("submit", registerUser);
+
+//const loginUser = document.getElementById("login-form");
+//loginUser.addEventListener("submit", loginForm);
+
+async function loginForm() {
+    //event.preventDefault();
+    const email = document.getElementById("emailcheck").value;
+    const password = document.getElementById("passwordcheck").value;
+
+    const result = await fetch('api/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            email,
+            password,
+        })
+    }).then(res => res.json());
+    if(result.status==='ok') {
+        console.log("Got the token:", result.data);
+        alert("Login successful");
+        window.location.href="html.html";
+    }
+    else{
+        alert("Login failed, UserName password incorrect", result.error);
+    }
+}
+
+
 function loginFun() {
     let box1 = document.querySelector(".pop-box1");
     box1.innerHTML = "";
     let box2 = document.querySelector(".pop-box2");
     box2.innerHTML = "";
+    //let regForm = document.getElementById("reg-form");
+    //regForm.style.display = "none";
+    //let loginShow = document.getElementById("login-form");
+    //loginShow.style.display = "block";
 
     let img = document.createElement("img");
     img.src = "https://ii1.pepperfry.com/images/new_login_modal_bg_2020.jpg";
 
 
     box2.innerHTML = `
-    <div class="user-id user-data">
-          <input type="email" name="" id="emailcheck" required=""/>
+    <from id="login-form">
+        <div class="user-id user-data">
+          <input type="email" id="emailcheck" required=""/>
           <label>Email ID/Mobile Number</label>
         </div>
         <div class="user-id user-data">
           <input type="password" name="" id="passwordcheck" required=""/>
           <label>Password</label>
         </div>
-        <button type='button' id="login-btn" onclick='checkLog()'>Login</button>
+        <input type="submit" id="login-btn" value="Login" onclick="loginForm()">
+    </from>
         <p id="forgot"><a href="#">Forgot Password?</a>
         </p>
         <hr>
-        <p id="signup">New to Pepperfry? Register HereLogin</p>
+        <p id="signup">New to Pepperfry? Register Here Login</p>
         <hr>
         <div class="social">
           <div>OR Continue with</div>
@@ -39,45 +77,35 @@ function loginFun() {
     `;
     box1.append(img);
 }
+//function loginForm2(){
+//alert("Login successful")
+//}
 
 
-let userStack = JSON.parse(localStorage.getItem("userDataBase")) || [];
+async function registerUser(event) {
+    event.preventDefault();
+    const name = document.querySelector("#name").value;
+    const mobile = document.querySelector("#number").value;
+    const email = document.querySelector("#email").value;
+    const password = document.querySelector("#password").value;
 
-function userDataBase() {
-    let name = document.querySelector("#name").value;
-    let mobile = document.querySelector("#number").value;
-    let email = document.querySelector("#email").value;
-    let password = document.querySelector("#password").value;
-
-    //console.log(name, mobile, email, password)
-    const usersData = {
-        name: name,
-        number: mobile,
-        email: email,
-        password: password,
+    const result = await fetch('api/register', { 
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json',
+        },
+        body: JSON.stringify({ 
+            name,
+            mobile,
+            email,
+            password,
+        })
+    }).then(res=>res.json());
+    if(result.status === 'ok'){
+        alert("registration successful");
+        loginFun();
     }
-    //console.log(usersData)
-    userStack.push(usersData);
-    console.log(userStack);
-    localStorage.setItem("userDataBase", JSON.stringify(userStack));
-    loginFun();
-}
-
-let finalFun = document.querySelector("#login-btn");
-//finalFun.addEventListener("click", checkLog);
-
-let resUser = JSON.parse(localStorage.getItem("userDataBase"));
-function checkLog() {
-    let user = document.querySelector("#emailcheck").value;
-    let pass = document.querySelector("#passwordcheck").value;
-
-    for (let i = 0; i < resUser.length; i++) {
-        if (resUser[i].email == user && resUser[i].password == pass) {
-            alert("Login Successful !");
-            window.location.href= "index.html"
-        }
-        else {
-            alert("Wrong Credential !!");
-        }
+    else{
+        alert(result.error);
     }
 }
