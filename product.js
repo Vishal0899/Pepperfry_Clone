@@ -1,18 +1,19 @@
 
          
-          let data;
+           let data;
+
+          let url = "https://ec2-18-236-222-188.us-west-2.compute.amazonaws.com:3000/product";
 
           async function getData(){
             try{
-              let res = await fetch("http://ec2-18-236-222-188.us-west-2.compute.amazonaws.com:3000/product");
-              data = await res.json();
-              console.log(data);
-              showData(data,catItem);
+                let res = await fetch(url);
+                let data = await res.json();
+                console.log(data,cartItem);
             }catch(err){
-              console.log(err);
+              console.error(err);
             }
           }
-          
+
           getData();
 
           let catItem =[
