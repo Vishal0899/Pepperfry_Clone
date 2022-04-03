@@ -4,7 +4,7 @@
 
           async function getData(){
             try{
-              let res = await fetch("http://ec2-18-236-222-188.us-west-2.compute.amazonaws.com:3000/product");
+              let res = await fetch("http://ec2-18-236-234-244.us-west-2.compute.amazonaws.com:3000/product");
               data = await res.json();
               console.log(data);
               showData(data,catItem);
