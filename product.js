@@ -1,22 +1,19 @@
 
+         
           let data;
-
-          let url = "https://ec2-18-236-222-188.us-west-2.compute.amazonaws.com:3000/product";
 
           async function getData(){
             try{
-                let res = await fetch(url);
-                let data = await res.json();
-                console.log(data,catItem);
+              let res = await fetch("http://ec2-18-236-222-188.us-west-2.compute.amazonaws.com:3000/product");
+              data = await res.json();
+              console.log(data);
+              showData(data,catItem);
             }catch(err){
-              console.error(err);
+              console.log(err);
             }
           }
-
+          
           getData();
-
-          async function getData(){
-                    
 
           let catItem =[
               {image:"https://ii2.pepperfry.com/media/wysiwyg/banners/Fur_Modern_3_Seater_Sofas.jpg", title:'Modern 3 Seater Sofas'},
@@ -35,6 +32,7 @@
     function showData(data,catItem){
 
       let CatSofa = document.getElementById("CatSofa");
+      console.log
       CatSofa.innerHTML="";
       catItem.forEach((element) =>{
         let div = document.createElement("div");
@@ -72,7 +70,7 @@
                 image.src = elem.img;
                 image.setAttribute("alt","https://ii1.pepperfry.com/img/grey.gif");
                 
-                //  ****************** showing addtocart and wishlist ******************************         
+      //  ****************** showing addtocart and wishlist ******************************         
                 let addTocart = document.createElement("button");
                 addTocart.setAttribute("class","BTN");
                 
@@ -89,7 +87,7 @@
                 <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                 </svg> `;        
                 
-                
+
                 let wishlist = document.createElement("div");
                 wishlist.setAttribute("class","wishlist");
                 wishlist.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="black" class="bi bi-heart" viewBox="0 0 16 16">
@@ -154,7 +152,8 @@
         function Sfunc(id){
         
           let x = document.getElementsByClassName("Sbullet");
-
+          // console.log(x);
+          // console.log(x.length);
             for(let i=1;i<=x.length;i++){
                 let bt = document.getElementById(`${i}`);
                 bt.setAttribute("style","background-color: white");
@@ -199,18 +198,18 @@
                 });
               }
 
-              // console.log(data);
-            showData(data,catItem);
-          }
+              showData(data,catItem);
+            }
+            
+// ************************************************************************************
+            
+            function Bfunc(name){
 
+              Data = data.filter((elem) => {
+                // console.log(elem);
+                return name==elem.brand; 
 
-      function Bfunc(name){
+              });
 
-        Data = data.filter((elem) => {
-
-          return name==elem.brand; 
-
-        });
-
-        showData(Data,catItem);
-      }
+              showData(Data,catItem);
+            }
