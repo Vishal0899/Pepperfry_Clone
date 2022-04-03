@@ -31,20 +31,21 @@
     </div>
   </div>
   <!-- ---------------------POPUP LOGIN SIGNUP-------------------- -->
-  <div class="popup">
+    <div class="popup">
     <div class="close-btn">&times;</div>
     <div class="form">
       <div class="pop-box1">
         <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Web_IMG_17Dec_09022022.jpg" alt="">
       </div>
       <div class="pop-box2">
+        <form id="reg-form">
         <div class="user-id user-data">
-          <input type="text" name="" id="name" required=""/>
+          <input type="text" id="name" autocomplete="off"/>
           <label>Name</label>
         </div>
         <div class="user-id user-data" id="verify">
           <div>
-            <input type="text" name="" id="number" required=""/>
+            <input type="text" id="number" autocomplete="off"/>
           <label>Mobile Number</label> 
           </div>
           <div id="otp">
@@ -52,15 +53,15 @@
           </div>   
         </div>
         <div class="user-id user-data">
-          <input type="email" name="" id="email" required=""/>
+          <input type="email" id="email" autocomplete="off"/>
           <label>Email ID</label>
         </div>
         <div class="user-id user-data">
-          <input type="password" name="" id="password" required=""/>
+          <input type="password" id="password" autocomplete="off"/>
           <label>Password</label>
         </div>
-
-        <button id="sign-btn" onclick="userDataBase()" onclick="loginFun()">Register</button>
+        <input id="sign-btn" type="submit" value="Register">
+      </form>
         <p id="terms">
           By registering you agree to our <a href="#">Terms & conditions </a>
         </p>
@@ -75,6 +76,7 @@
       </div>
     </div>
   </div>
+<!------------------------  POPUP LOGIN END  ------------------->
   <!-- Navbar -->
   <div>
     <div class="nav_container">
