@@ -12,8 +12,6 @@
 <br />
 
 
-# Features:-
-
 #      1. Home Page 
   
   ![image](https://cdn-images-1.medium.com/max/1250/0*idWzYwb3FeoXZPK5.png)
